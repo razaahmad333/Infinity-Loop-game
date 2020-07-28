@@ -112,7 +112,7 @@ class Cell{
 	 	if(this.visited)  this.currentWall = this.allWall[this.cwi];
 	 	if(!this.visited) this.currentWall = this.originalWall;
 	 	stroke(c[0], c[1], c[2]);
-	 	strokeWeight(size/10);
+	 	strokeWeight(size/6);
 	 	if(!this.currentWall[0]) line(this.i*this.size + this.size/2 + xmargin,  this.j*this.size + ymargin,              this.i*this.size + this.size/2 + xmargin, this.j*this.size + this.size/2 + ymargin )
 	 	if(!this.currentWall[1]) line(this.i*this.size + this.size + xmargin,    this.j*this.size +this.size/2+ ymargin,  this.i*this.size + this.size/2 + xmargin, this.j*this.size + this.size/2 + ymargin )
 	 	if(!this.currentWall[2]) line(this.i*this.size + this.size/2 + xmargin,  this.j*this.size + this.size+ ymargin,   this.i*this.size + this.size/2 + xmargin, this.j*this.size + this.size/2 + ymargin )
