@@ -79,7 +79,7 @@ class Player{
 	}
 	createButtons(){
 		this.submit = createButton('submit');
-		this.submit.position(10,640);
+		this.submit.position(10,740);
 		this.submit.size(150,80);
 		this.submit.mousePressed(()=>this.CanCheckRingFormed = true);
 
