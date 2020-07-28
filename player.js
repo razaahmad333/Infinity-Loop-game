@@ -79,18 +79,18 @@ class Player{
 	}
 	createButtons(){
 		this.submit = createButton('submit');
-		this.submit.position(10,40);
-		this.submit.size(70,40);
+		this.submit.position(10,640);
+		this.submit.size(150,80);
 		this.submit.mousePressed(()=>this.CanCheckRingFormed = true);
 
 		this.solution = createButton('solution');
-		this.solution.position(10,170);
-		this.solution.size(70,40);
+		this.solution.position(10,870);
+		this.solution.size(150,80);
 		this.solution.mousePressed(()=>this.CanAutoComplete = true);
 
 		this.tryAgain = createButton('tryAgain');
-		this.tryAgain.position(10,100);
-		this.tryAgain.size(70,40);//|||||
+		this.tryAgain.position(10,1000);
+		this.tryAgain.size(150,80);//|||||
 		this.tryAgain.mousePressed(()=>this.canTry = true);
 		
 	}
