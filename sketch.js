@@ -1,17 +1,17 @@
-let rows = 10;
-let cols = 10;
-let size = 60;
+let rows = 7;
+let cols = 7;
+let size = 70;
 let xmargin, ymargin;
 let newGame;
 let board, lboard;
 function setup(){
 	createCanvas(windowWidth, windowHeight);
 	xmargin = (windowWidth - cols*size)/2;
-	ymargin = (windowHeight - rows*size)/2;
+	ymargin = (windowHeight - rows*size)/2 + 50;
 	 board = createBoard(rows, cols, size);
 	 creatingRings(board);
 	 newGame = createButton('NEWGAME');
-	 newGame.position(40,1300);
+	 newGame.position(20,1200);
 	 newGame.size(150,80);
 	 newGame.mousePressed(newGameStart);
 ///ring = createRing(board);
